@@ -47,6 +47,7 @@ a {
 
 .top .nav .name {
   font-size: 30px;
+  font-weight: 700;
 }
 
 .top .nav span {
@@ -154,6 +155,8 @@ a {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .skills ul.three {
@@ -241,13 +244,16 @@ a {
 
 /* product */
 .product .product_top {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
+  /* justify-content: space-between; */
   margin-bottom: 64px;
+  position: relative;
 }
 
 .product .product_top h3 {
   font-size: 30px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .product .product_top button {
@@ -257,20 +263,25 @@ a {
   color: #fff;
   border-radius: 32px;
   font-weight: 700;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(50%);
 }
 
 .product ul li .img {
   width: 340px;
   height: 300px;
-  /* background-color: #ddd; */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
   border: 1px solid rgba(0, 0, 0, 0.3);
+  background-size: 90%;
 }
 
 .product ul li .img.img_01 {
   background-image: url('../images/home/images/graphic.png');
+  background-size: contain;
 }
 
 .product ul li .img.img_02 {

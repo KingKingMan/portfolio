@@ -1,0 +1,54 @@
+.section_01 {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  margin-bottom: 100px;
+}
+
+.section_01 .img_box {
+  margin-right: 70px;
+}
+
+.section_01 .img_box .img {
+  width: 240px;
+  height: 364px;
+  background-color: #f4f4f4;
+  background-image: url('../images/introduce/표정만두.svg');
+  background-position: center;
+  background-size: 160%;
+  background-repeat: no-repeat;
+  margin-bottom: 15px;
+}
+
+.section_01 .img_box h2 {
+  width: 240px;
+  font-size: 40px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section_01 .text_box h2 {
+  margin-bottom: 71px;
+  font-size: 36px;
+}
+
+.section_01 .text_box ul li h3 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.section_01 .text_box ul li p {
+  margin-bottom: 135px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* section_02 */
+.section_02 h2 {
+  font-size: 24px;
+}
+
+.section_02 ul {
+  display: flex;
+}
