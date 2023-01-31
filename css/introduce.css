@@ -118,6 +118,8 @@
 .section_03 .sns_box ul li i {
   font-size: 160px;
   margin-bottom: 20px;
+  display: block;
+  text-align: center;
 }
 
 .section_03 .sns_box ul li .info {

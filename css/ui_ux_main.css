@@ -1,0 +1,48 @@
+.all h2 {
+  text-align: center;
+  margin-bottom: 80px;
+  font-size: 36px;
+}
+
+.all ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.all ul li {
+  text-align: center;
+}
+
+.all ul li .text_box h4 {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.all ul li .text_box p,
+.all ul li .text_box span {
+  font-size: 16px;
+}
+
+.all ul li a .img {
+  width: 340px;
+  height: 340px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.all ul li a .img_01 {
+  background-image: url(../images/ui_ux/first_01.jpg);
+  background-size: 40%;
+}
+.all ul li a .img_02 {
+  background-image: url(../images/ui_ux/second.jpg);
+  background-size: 90%;
+}
+.all ul li a .img_03 {
+  background-image: url(../images/ui_ux/last_01.jpg);
+  background-size: 40%;
+}

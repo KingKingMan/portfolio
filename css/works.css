@@ -1,0 +1,41 @@
+.top {
+  height: 200px;
+  margin-bottom: 120px;
+}
+
+.works_hero ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.works_hero ul li {
+  text-align: center;
+}
+
+.works_hero ul li h2 {
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.works_hero ul li .img {
+  width: 340px;
+  height: 340px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.works_hero ul li .img.img_01 {
+  background-image: url('../images/works/main/Graphic.png');
+}
+
+.works_hero ul li .img.img_02 {
+  background-image: url('../images/works/main/UI-UX.png');
+}
+
+.works_hero ul li .img.img_03 {
+  background-image: url('../images/works/main/web.png');
+  background-size: 80%;
+}

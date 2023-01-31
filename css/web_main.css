@@ -1,0 +1,65 @@
+.all h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 80px;
+}
+
+.all ul li.section {
+  display: flex;
+  gap: 60px;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.all ul li.section .text_box {
+  position: absolute;
+  top: 140px;
+  left: 400px;
+}
+
+.all ul li.section .text_box .position {
+  position: relative;
+}
+
+.all ul li.section .text_box .position .logo_box {
+  position: absolute;
+  top: 260px;
+  left: 0;
+}
+
+.all ul li.section:last-child {
+  border: none;
+}
+
+.all ul li a .photo_box {
+  width: 340px;
+  height: 340px;
+}
+
+.all ul li .text_box h3 {
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+
+.all ul li .logo_box p {
+  font-size: 16px;
+  width: 79px;
+  height: 25px;
+  background-color: var(--pink);
+  border-radius: 25px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+.all ul li .text_box .logo_box {
+  display: flex;
+}
+
+.all ul li .text_box .logo_box ul {
+  display: flex;
+  gap: 10px;
+  margin-left: 46px;
+}

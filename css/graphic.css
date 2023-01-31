@@ -1,0 +1,43 @@
+.product {
+  text-align: center;
+  position: relative;
+  margin-top: 200px;
+}
+
+.product img {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-top: 55px;
+  margin-bottom: 70px;
+}
+
+.product h2 {
+  margin-bottom: 45px;
+}
+
+.product .title {
+  margin-bottom: 3px;
+}
+
+.product span {
+  position: absolute;
+  top: -4%;
+  left: 0;
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.btns {
+  text-align: center;
+}
+
+button {
+  margin: 0 25px;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #000;
+  color: #fff;
+  font-size: 26px;
+  cursor: pointer;
+  line-height: 40px;
+}
