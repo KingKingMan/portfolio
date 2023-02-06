@@ -23,6 +23,10 @@
   border: none;
 }
 
+button:hover {
+  font-weight: 700;
+}
+
 .content h2 {
   margin-bottom: 45px;
 }
@@ -65,4 +69,13 @@
   font-size: 26px;
   cursor: pointer;
   line-height: 40px;
+  border: none;
+}
+
+.btns button:hover {
+  background-color: #ddd;
+  color: #000;
+  border: none;
+  transition: 0.4s;
+  font-size: 28px;
 }

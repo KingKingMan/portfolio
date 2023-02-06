@@ -49,4 +49,13 @@ button {
   font-size: 26px;
   cursor: pointer;
   line-height: 40px;
+  border: none;
+}
+
+button:hover {
+  background-color: #ddd;
+  color: #000;
+  border: none;
+  transition: 0.4s;
+  font-size: 28px;
 }

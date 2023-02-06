@@ -39,6 +39,15 @@ a {
   margin-bottom: 127px;
 }
 
+/* .top {
+  position: relative;
+  z-index: 2;
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  zoom: 1;
+} */
+
 .top .nav {
   display: flex;
   justify-content: space-between;
@@ -48,6 +57,11 @@ a {
 .top .nav .name {
   font-size: 30px;
   font-weight: 700;
+}
+
+.top .nav .name:hover {
+  text-decoration: underline;
+  font-weight: 400;
 }
 
 .top .nav span {
@@ -75,6 +89,11 @@ a {
 .top .nav ul li.here {
   color: var(--red);
   font-weight: 700;
+}
+
+.top .nav ul li:hover {
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 /* hero */
@@ -118,7 +137,14 @@ a {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 45px;
-  /* cursor: pointer; */
+  cursor: pointer;
+}
+
+.hero .text_box button:hover {
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  transition: 0.5s;
 }
 
 .hero .text_box ul {
@@ -270,6 +296,13 @@ a {
   transform: translateY(50%);
 }
 
+.product .product_top button:hover {
+  background-color: var(--pink);
+  border: none;
+  font-size: 20px;
+  transition: 1s;
+}
+
 .product ul li .img {
   width: 340px;
   height: 300px;
@@ -338,8 +371,8 @@ a {
 
 /* footer */
 .footer {
-  height: 276px;
+  height: 150px;
   color: rgba(0, 0, 0, 0.3);
   text-align: center;
-  line-height: 276px;
+  line-height: 150px;
 }
