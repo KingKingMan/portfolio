@@ -67,13 +67,32 @@ a {
 .top .nav span {
   width: 30px;
   height: 30px;
+  border-radius: 30px;
   background-color: var(--pink);
   display: inline-block;
-  border-radius: 30px;
   position: absolute;
   bottom: -10px;
   left: 70px;
   z-index: -1;
+}
+
+.top .nav span {
+  animation-name: aaa;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-timing-function: linear;
+  animation-fill-mode: none;
+  animation-fill-mode: forwards;
+}
+
+@keyframes aaa {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .top .nav ul {
