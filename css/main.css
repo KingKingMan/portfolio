@@ -59,12 +59,32 @@ a {
   font-weight: 700;
 }
 
-.top .nav .name:hover {
-  text-decoration: underline;
-  font-weight: 400;
+.top .nav .name::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-color: var(--pink);
+  position: absolute;
+  top: 24px;
+  left: 70px;
+  z-index: -1;
+  transition: all 0.5s;
+  border-radius: 30px;
 }
 
-.top .nav span {
+.top .nav .name:hover:after {
+  top: -10px;
+  left: -20px;
+  width: 50px;
+  height: 50px;
+}
+
+/* .top .nav .name:hover {
+  text-decoration: underline;
+  font-weight: 400;
+} */
+
+/* .top .nav span {
   width: 30px;
   height: 30px;
   border-radius: 30px;
@@ -74,9 +94,6 @@ a {
   bottom: -10px;
   left: 70px;
   z-index: -1;
-}
-
-.top .nav span {
   animation-name: aaa;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -84,7 +101,9 @@ a {
   animation-timing-function: linear;
   animation-fill-mode: none;
   animation-fill-mode: forwards;
-}
+} */
+
+/* .top .nav span {} */
 
 @keyframes aaa {
   from {
@@ -172,6 +191,7 @@ a {
 
 .hero .text_box ul li {
   margin-right: 30px;
+  font-size: 28px;
 }
 
 .hero .hero_img {
@@ -263,20 +283,21 @@ a {
   margin-bottom: 10px;
 }
 
-.skills ul li .text::after {
+/* .skills ul li .text::after {
   display: block;
   content: '';
   width: 110%;
   transform: translate(-30px, 10px);
   border-bottom: 1px solid #ccc;
-}
+} */
 
 .skills ul li.box img.pp {
-  margin: 16px 0 16px 50px;
+  margin: 16px 0 16px 30px;
 }
 
 .skills ul li ul {
   display: flex;
+  margin-left: -20px;
 }
 
 .skills ul li ul li {
@@ -318,8 +339,8 @@ a {
 .product .product_top button:hover {
   background-color: var(--pink);
   border: none;
-  font-size: 20px;
-  transition: 1s;
+  /* font-size: 20px; */
+  transition: 0.3s;
 }
 
 .product ul li .img {
