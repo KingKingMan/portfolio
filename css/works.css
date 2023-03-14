@@ -39,3 +39,36 @@
   background-image: url('../images/works/main/web.png');
   background-size: 80%;
 }
+
+/* =============================================== */
+
+@media (max-width: 768px) {
+  .top {
+    margin-bottom: 127px;
+  }
+
+  .works_hero ul {
+    display: grid;
+  }
+
+  .works_hero ul li {
+    /* text-align: center; */
+    justify-content: center;
+    margin: 0 0 100px 0;
+  }
+
+  .works_hero ul li h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .works_hero ul li .img {
+    width: 270px;
+    height: 270px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+}

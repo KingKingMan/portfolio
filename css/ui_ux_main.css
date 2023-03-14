@@ -58,3 +58,53 @@
   background-image: url(../images/ui_ux/last_01.jpg);
   background-size: 40%;
 }
+
+/* ======================================================= */
+
+@media (max-width: 768px) {
+  .go_back {
+    position: relative;
+  }
+
+  .go_back span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .all h2 {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 24px;
+  }
+
+  .all ul {
+    display: grid;
+  }
+
+  .all ul li {
+    text-align: center;
+  }
+
+  .all ul li .text_box h4 {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .all ul li .text_box p,
+  .all ul li .text_box span {
+    font-size: 14px;
+  }
+
+  .all ul li a .img {
+    width: 270px;
+    height: 270px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
