@@ -59,3 +59,64 @@ button:hover {
   transition: 0.4s;
   font-size: 28px;
 }
+
+/* ============================================= */
+
+@media (max-width: 768px) {
+  .content {
+    position: relative;
+    margin-top: 0;
+  }
+
+  .content h2 {
+    margin-bottom: 45px;
+  }
+
+  .content .text_box {
+    text-align: center;
+    margin-bottom: 55px;
+  }
+
+  .content ul {
+    display: grid;
+  }
+
+  .content ul li {
+    margin-bottom: 100px;
+    /* width: 200px; ?? */
+  }
+
+  .content .title {
+    margin-bottom: 3px;
+  }
+
+  .content span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .visual {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  .btns {
+    text-align: center;
+  }
+
+  button {
+    margin: 0 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #000;
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+    line-height: 40px;
+    border: none;
+  }
+}
