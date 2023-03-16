@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+/* Light300 / Regular400 / Medium500 / Bold700 / Black 900 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.center {
+  width: 90%;
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: 0 auto;
+  /*실제사용 1140px */
+}
+
+:root {
+  --pink: #ff9797;
+  --red: #ff0000;
+}
+
+/* top */
+.top {
+  margin-top: 80px;
+  margin-bottom: 127px;
+}
+
+.top .nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.top .nav .name {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.top .nav .name::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-color: var(--pink);
+  position: absolute;
+  top: 24px;
+  left: 70px;
+  z-index: -1;
+  transition: all 0.5s;
+  border-radius: 30px;
+}
+
+.top .nav .name:hover:after {
+  top: -10px;
+  left: -20px;
+  width: 50px;
+  height: 50px;
+}
+
+@keyframes aaa {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.gnb {
+  display: flex;
+  gap: 80px;
+  font-size: 20px;
+}
+
+.gnb li {
+  font-weight: 400;
+}
+
+.gnb li.on {
+  color: var(--red);
+  font-weight: 700;
+}
+
+.gnb li:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.bars {
+  font-size: 30px;
+  display: none;
+}
+
+/* footer */
+.footer {
+  color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .center {
+    width: 100%;
+  }
+
+  .top {
+    margin-top: 20px;
+  }
+
+  .top .nav .name {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .top .nav .name::after {
+    top: 16px;
+    left: 50px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .top .nav .name:hover:after {
+    /* transition: none; */
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+  }
+
+  .bars {
+    display: block;
+    z-index: 1;
+  }
+
+  .gnb {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    flex-direction: column;
+    z-index: 1;
+    text-align: center;
+    padding-top: 120px;
+    font-size: 26px;
+    transition: left 0.3s;
+  }
+
+  .gnb.active {
+    left: 0;
+  }
+
+  .footer {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    font-size: 14px;
+  }
+}

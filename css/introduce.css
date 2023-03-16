@@ -8,7 +8,7 @@
   margin-right: 70px;
 }
 
-.section_01 .img_box .img {
+.section_01 .img_box .thumb {
   width: 240px;
   height: 364px;
   background-color: #f4f4f4;
@@ -131,95 +131,59 @@
 /* ========================================================= */
 
 @media (max-width: 768px) {
+  .top {
+    margin-bottom: 60px;
+  }
+
   .section_01 {
-    display: grid;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    margin-bottom: 100px;
-    justify-content: center;
+    flex-direction: column;
   }
 
   .section_01 .img_box {
+    margin-right: initial;
   }
 
-  .section_01 .img_box .img {
-    align-items: center;
-    width: 240px;
+  .section_01 .img_box .thumb {
+    width: 100%;
     height: 364px;
     background-color: #f4f4f4;
     background-image: url('../images/introduce/표정만두.svg');
     background-position: center;
-    background-size: 160%;
+    background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 40px;
-  }
-
-  .section_01 .img_box h2 {
-    width: 268px;
-    font-size: 20px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .section_01 .text_box {
-    margin-left: 20px;
-  }
-
-  .section_01 .text_box h2 {
-    margin-top: 40px;
-    margin-bottom: 71px;
-    font-size: 16px;
-  }
-
-  .section_01 .text_box ul li h3 {
-    margin-bottom: 30px;
-    font-size: 20px;
-    font-weight: 400;
-  }
-
-  .section_01 .text_box ul li p {
-    margin-bottom: 135px;
-    font-size: 16px;
-    font-weight: 400;
+    margin-bottom: 15px;
   }
 
   /* section_02 */
-
   .section_02 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   }
 
   .section_02 h2 {
     font-size: 24px;
-    margin-bottom: 0;
+    margin-bottom: 100px;
   }
 
   .section_02 ul {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
 
   .section_02 ul li {
-    position: relative;
-    display: flex;
-    margin-bottom: 100px;
+    margin-bottom: initial;
   }
 
   .section_02 ul li .text_box {
-    background-color: inherit;
-    width: 100px;
-    height: 50px;
-    text-align: center;
-    margin-top: 0;
-    padding-top: 0;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 0;
   }
 
   .section_02 ul li .text_box .title {
-    font-size: 12px;
-    color: #000;
-  }
-
-  .section_02 ul li .date {
-    font-size: 12px;
+    padding-top: 30px;
+    font-size: 18px;
+    color: #fff;
   }
 
   .section_02 ul li .arrow {
@@ -236,30 +200,37 @@
   }
 
   .section_03 .sns_box {
-    width: 300px;
-    height: 120px;
+    width: 100%;
+    height: initial;
     background-color: #ff8888;
     margin: 0 auto;
-    border: 3px solid #000;
+    border: 6px solid #000;
   }
 
   .section_03 .sns_box ul {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 
   .section_03 .sns_box ul li {
-    margin-top: 30px;
+    margin-top: initial;
+    padding: 10px 0;
   }
 
   .section_03 .sns_box ul li i {
-    font-size: 50px;
+    font-size: 60px;
     margin-bottom: 20px;
     display: block;
     text-align: center;
   }
 
   .section_03 .sns_box ul li .info {
-    display: none;
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .section_03 .sns_box ul li:last-child .info {
+    letter-spacing: -1px;
   }
 }

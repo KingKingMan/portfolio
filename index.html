@@ -8,8 +8,11 @@
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
     />
+    <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <title>박원철-포트폴리오</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script src="./js/common.js"></script>
   </head>
   <body>
     <div class="center">
@@ -18,11 +21,12 @@
           <a href="#x">
             <div class="name">박원철 <span></span></div>
           </a>
-          <ul>
-            <li class="here"><a href="#x">홈</a></li>
+          <ul class="gnb">
+            <li class="on"><a href="#x">홈</a></li>
             <li><a href="./pages/introduce.html">소개</a></li>
             <li><a href="./pages/works.html">작업</a></li>
           </ul>
+          <div class="bars"><i class="xi-bars"></i></div>
         </div>
       </div>
 
@@ -60,11 +64,11 @@
               프리미어 프로를 사용하여 영상편집이 가능하며 BGM, 자막, 짤 삽입과
               포토샵, 일러스트를 곁들여 CG처리 또한 문제 없는 수준입니다.
             </p>
-            <img
-              class="pp"
-              src="./images/home/images/Premiere_Pro.png"
-              alt=""
-            />
+            <ul>
+              <li>
+                <img src="./images/home/images/Premiere_Pro.png" alt="" />
+              </li>
+            </ul>
           </li>
           <li class="box">
             <h3>디자인</h3>
@@ -103,10 +107,10 @@
             <button>더보기</button>
           </a>
         </div>
-        <ul>
+        <ul class="list">
           <li>
             <a href="./pages/Graphic/graphic_main.html">
-              <div class="img img_01"></div>
+              <div class="thumb thumb_01"></div>
             </a>
             <div class="text_box">
               <a href="./pages/Graphic/graphic_main.html">
@@ -121,7 +125,7 @@
           </li>
           <li>
             <a href="./pages/UI_UX/ui_ux_main.html">
-              <div class="img img_02"></div>
+              <div class="thumb thumb_02"></div>
             </a>
             <div class="text_box">
               <a href="./pages/UI_UX/ui_ux_main.html">
@@ -136,7 +140,7 @@
           </li>
           <li>
             <a href="./pages/Web/web_main.html">
-              <div class="img img_03"></div>
+              <div class="thumb thumb_03"></div>
             </a>
             <div class="text_box">
               <a href="./pages/Web/web_main.html">
@@ -156,5 +160,11 @@
         <p>Copyright 2023. poc9510 ALL rights reserved.</p>
       </div>
     </div>
+    <script>
+      $('.bars').click(function () {
+        $('.gnb').toggleClass('active')
+        $(this).find('i').toggleClass('xi-close')
+      })
+    </script>
   </body>
 </html>
