@@ -235,6 +235,10 @@
 /* ============================================== */
 
 @media (max-width: 768px) {
+  .top {
+    margin-bottom: 127px;
+  }
+
   /* hero */
   .hero {
     position: relative;

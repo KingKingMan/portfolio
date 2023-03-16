@@ -119,6 +119,7 @@ a {
 
   .top {
     margin-top: 20px;
+    margin-bottom: 60px;
   }
 
   .top .nav .name {
@@ -134,7 +135,6 @@ a {
   }
 
   .top .nav .name:hover:after {
-    /* transition: none; */
     top: 0;
     left: 0;
     width: 20px;

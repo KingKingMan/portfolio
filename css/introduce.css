@@ -137,10 +137,12 @@
 
   .section_01 {
     flex-direction: column;
+    margin-bottom: 40px;
   }
 
   .section_01 .img_box {
     margin-right: initial;
+    margin-bottom: 40px;
   }
 
   .section_01 .img_box .thumb {
@@ -154,6 +156,28 @@
     margin-bottom: 15px;
   }
 
+  .section_01 .img_box h2 {
+    font-size: 28px;
+    margin: 0 auto;
+  }
+
+  .section_01 .text_box h2 {
+    font-size: 24px;
+  }
+
+  .section_01 .text_box ul li h3 {
+    font-size: 20px;
+  }
+
+  .section_01 .text_box ul li p {
+    font-size: 18px;
+    margin-bottom: 80px;
+  }
+
+  .section_01 .text_box ul li:last-child p {
+    margin-bottom: 60px;
+  }
+
   /* section_02 */
   .section_02 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -161,13 +185,14 @@
 
   .section_02 h2 {
     font-size: 24px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
   }
 
   .section_02 ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    margin-bottom: 60px;
   }
 
   .section_02 ul li {
@@ -177,11 +202,10 @@
   .section_02 ul li .text_box {
     width: 140px;
     height: 140px;
-    margin-bottom: 0;
   }
 
   .section_02 ul li .text_box .title {
-    padding-top: 30px;
+    padding-top: 50px;
     font-size: 18px;
     color: #fff;
   }

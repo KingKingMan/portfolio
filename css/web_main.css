@@ -22,23 +22,14 @@
   padding-top: 110px;
   padding-bottom: 110px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  position: relative;
 }
 
-.all ul li.section .text_box {
-  position: absolute;
-  top: 140px;
-  left: 400px;
+.all ul li.section h3 {
+  margin-top: 20px;
 }
 
-.all ul li.section .text_box .position {
-  position: relative;
-}
-
-.all ul li.section .text_box .position .logo_box {
-  position: absolute;
-  top: 260px;
-  left: 0;
+.all ul li.section .text_box p.middle {
+  height: 210px;
 }
 
 .all ul li.section:last-child {
@@ -93,48 +84,39 @@
 
   .all h2 {
     text-align: center;
-    font-size: 24px;
-    margin-bottom: 0;
+    font-size: 28px;
+    margin-bottom: initial;
   }
 
   .all ul li.section {
-    display: grid;
-    gap: 60px;
-    padding-top: 110px;
-    padding-bottom: 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 80px;
+    padding-bottom: 60px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    position: relative;
   }
 
-  .all ul li a .photo_box img {
-    width: 270px;
-    height: 270px;
+  .all ul li:last-child {
+    padding-bottom: initial;
   }
 
-  .all ul li.section .text_box {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 270px;
+  .all ul li.section h3 {
+    margin-top: initial;
   }
 
-  .all ul li.section .text_box .position {
-    position: relative;
-  }
-
-  .all ul li.section .text_box .position .logo_box {
-    position: absolute;
-    top: 260px;
-    left: 0;
+  .all ul li.section .text_box p.middle {
+    height: initial;
+    margin-bottom: 40px;
   }
 
   .all ul li.section:last-child {
     border: none;
   }
 
-  .all ul li a .photo_box {
-    width: 340px;
-    height: 340px;
+  .all ul li a .photo_box img {
+    width: 300px;
+    height: 300px;
   }
 
   .all ul li .text_box h3 {
