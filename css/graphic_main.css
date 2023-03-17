@@ -1,13 +1,5 @@
-.go_back {
+.all {
   position: relative;
-}
-
-.go_back span {
-  position: absolute;
-  top: -4%;
-  left: 0;
-  font-size: 40px;
-  color: rgba(0, 0, 0, 0.3);
 }
 
 .all h2 {
@@ -68,14 +60,6 @@
 /* ============================================== */
 
 @media (max-width: 768px) {
-  .go_back span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 30px;
-    color: rgba(0, 0, 0, 0.3);
-  }
-
   .all h2 {
     margin-bottom: 40px;
     font-size: 28px;

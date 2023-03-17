@@ -104,6 +104,11 @@ a {
   display: none;
 }
 
+.all,
+.content {
+  position: relative;
+}
+
 /* footer */
 .footer {
   color: rgba(0, 0, 0, 0.3);
@@ -112,7 +117,23 @@ a {
   margin-bottom: 60px;
 }
 
+.go_back {
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 @media (max-width: 768px) {
+  .go_back {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
   .center {
     width: 100%;
   }

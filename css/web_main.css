@@ -1,15 +1,3 @@
-.go_back {
-  position: relative;
-}
-
-.go_back span {
-  position: absolute;
-  top: -4%;
-  left: 0;
-  font-size: 40px;
-  color: rgba(0, 0, 0, 0.3);
-}
-
 .all h2 {
   text-align: center;
   font-size: 36px;
@@ -22,6 +10,7 @@
   padding-top: 110px;
   padding-bottom: 110px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  align-items: center;
 }
 
 .all ul li.section h3 {
@@ -70,18 +59,6 @@
 /* ============================================= */
 
 @media (max-width: 768px) {
-  .go_back {
-    position: relative;
-  }
-
-  .go_back span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 30px;
-    color: rgba(0, 0, 0, 0.3);
-  }
-
   .all h2 {
     text-align: center;
     font-size: 28px;
@@ -89,12 +66,10 @@
   }
 
   .all ul li.section {
-    display: flex;
     flex-direction: column;
     gap: 10px;
     padding-top: 80px;
     padding-bottom: 60px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   }
 
   .all ul li:last-child {
@@ -103,6 +78,8 @@
 
   .all ul li.section h3 {
     margin-top: initial;
+    margin-bottom: 20px;
+    text-align: center;
   }
 
   .all ul li.section .text_box p.middle {
@@ -110,38 +87,13 @@
     margin-bottom: 40px;
   }
 
-  .all ul li.section:last-child {
-    border: none;
+  .all ul li a .photo_box {
+    align-items: center;
+    text-align: center;
   }
 
   .all ul li a .photo_box img {
     width: 300px;
     height: 300px;
-  }
-
-  .all ul li .text_box h3 {
-    font-size: 22px;
-    margin-bottom: 50px;
-  }
-
-  .all ul li .logo_box p {
-    font-size: 16px;
-    width: 79px;
-    height: 25px;
-    background-color: var(--pink);
-    border-radius: 25px;
-    text-align: center;
-    color: #fff;
-    font-weight: 700;
-  }
-
-  .all ul li .text_box .logo_box {
-    display: flex;
-  }
-
-  .all ul li .text_box .logo_box ul {
-    display: flex;
-    gap: 10px;
-    margin-left: 46px;
   }
 }

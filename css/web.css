@@ -1,5 +1,5 @@
 .content {
-  position: relative;
+  /* position: relative; */
   margin-top: 200px;
 }
 
@@ -42,14 +42,6 @@ button:hover {
   margin-bottom: 70px;
 }
 
-.content span {
-  position: absolute;
-  top: -4%;
-  left: 0;
-  font-size: 40px;
-  color: rgba(0, 0, 0, 0.3);
-}
-
 .visual {
   text-align: center;
   margin-bottom: 70px;
@@ -78,4 +70,28 @@ button:hover {
   border: none;
   transition: 0.4s;
   font-size: 28px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin-top: initial;
+  }
+
+  .content .btn {
+    position: absolute;
+    top: 120px;
+    left: -5px;
+  }
+
+  .content h2 {
+    margin-bottom: 40px;
+  }
+
+  .content .text_box {
+    margin-bottom: 120px;
+  }
+
+  .content ul li img {
+    width: 140px;
+  }
 }

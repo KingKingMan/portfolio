@@ -1,6 +1,5 @@
 .content {
   position: relative;
-  margin-top: 200px;
 }
 
 .content h2 {
@@ -20,14 +19,6 @@
 
 .content .title {
   margin-bottom: 3px;
-}
-
-.content span {
-  position: absolute;
-  top: -4%;
-  left: 0;
-  font-size: 40px;
-  color: rgba(0, 0, 0, 0.3);
 }
 
 .visual {
@@ -64,59 +55,25 @@ button:hover {
 
 @media (max-width: 768px) {
   .content {
-    position: relative;
-    margin-top: 0;
-  }
-
-  .content h2 {
-    margin-bottom: 45px;
-  }
-
-  .content .text_box {
-    text-align: center;
-    margin-bottom: 55px;
+    margin-top: initial;
   }
 
   .content ul {
-    display: grid;
-  }
-
-  .content ul li {
-    margin-bottom: 100px;
-    /* width: 200px; ?? */
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
   }
 
   .content .title {
     margin-bottom: 3px;
   }
 
-  .content span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 30px;
-    color: rgba(0, 0, 0, 0.3);
-  }
-
   .visual {
-    text-align: center;
     margin-bottom: 70px;
   }
 
-  .btns {
-    text-align: center;
-  }
-
-  button {
-    margin: 0 25px;
-    width: 40px;
-    height: 40px;
-    border-radius: 40px;
-    background-color: #000;
-    color: #fff;
-    font-size: 26px;
-    cursor: pointer;
-    line-height: 40px;
-    border: none;
+  .visual img {
+    width: 310px;
   }
 }
